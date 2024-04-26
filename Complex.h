@@ -10,16 +10,16 @@ public:
     Complex(int num_re, int denom_re, int num_im, int denom_im);
     Complex(Fraction re, Fraction im);
 
-     friend std::ostream& operator<<(std::ostream& os, Complex& tmp){
+    friend std::ostream& operator<<(std::ostream& os, Complex& tmp){
         if (tmp._re.GetNum() != 0){
             os << tmp._re;
         }
         else{
             if (tmp._im > 0){
-            os <<" - "<< tmp._im << "i" ;
+            os <<"-"<< tmp._im << "i" ;
             }
             else{
-                os <<" + "<< -tmp._im << "i" ;
+                os <<"+"<< -tmp._im << "i" ;
             }
             return os;
         }
@@ -27,7 +27,7 @@ public:
             return os;
         }
         if (tmp._im > 0){
-            os << " + " << tmp._im << "i" ;
+            os << "+" << tmp._im << "i" ;
         }
         else{
             os << tmp._im << "i" ;

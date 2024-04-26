@@ -20,13 +20,18 @@ void Fraction::Print(){
     else std::cout << _num << "/" << _denom << std::endl;
 }
 int Fraction::NOD(uint32_t num1, uint32_t num2){
-    int tmp = num1%num2, ans;
-    if(tmp = 0)return num2;
-    ans = NOD(num2,tmp);
-    return ans;
+    if(num1%num2==0) 
+        return num2;
+    if(num2%num1==0) 
+        return num1;
+    if(num1>num2)
+        return NOD(num1%num2,num2);
+    return NOD(num1,num2%num1);
 }
 void Fraction::Reduction(){
-    int tmp = NOD(_num,_denom);
+    int nod = NOD(fabs(_num), _denom);
+    _num = _num / nod;
+    _denom = _denom / nod;
 }
 
 int Fraction::Len(double copy){
@@ -57,13 +62,14 @@ Fraction::Fraction(double number){
     }
     int32_t number1 = fabs(number), number2 = 0, lenght;
     double copy = number;
-    lenght = Len(copy);
+    lenght = 6;
     for (int i = 0; i < lenght; i++){
         number *= 10;
         number2 = number2 * 10 + (int)(number) % 10;
     }
     int32_t num = fabs(number);
-    if (number != 0)  int32_t num = number1 * pow(10, lenght) + fabs(number2);
+    if (number != 0)  
+        num = number1 * pow(10, lenght) + fabs(number2);
     uint32_t denum = pow(10, lenght);
     int nod = 1;
     if (num > denum) nod = NOD(num, denum);

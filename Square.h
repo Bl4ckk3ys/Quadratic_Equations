@@ -2,7 +2,7 @@
 #include "Fraction.h"
 #include "Complex.h"
 
-class square{   
+class Square_Equation{   
 private:
     Fraction _a;
     Fraction _b;
@@ -10,9 +10,9 @@ private:
     Fraction _D;
     Complex _root1;
     Complex _root2;
-public:
-    square(Fraction a, Fraction b, Fraction c);
     void root();
-    void print();
-    void print_root();
+public:
+    Square_Equation(Fraction a, Fraction b, Fraction c);
+    void print_roots();
+    
 };

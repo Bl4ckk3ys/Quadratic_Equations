@@ -1,17 +1,20 @@
 #pragma once
 #include <iostream>
 #include <cstdint>
+#include <algorithm>
+#include <cmath>
 
 class Fraction{
-private:
-    uint32_t _denom;
+private: 
     int32_t _num;
+    uint32_t _denom;
     int NOD(uint32_t num, uint32_t denom);
+    int Len(double copy);
+    
 public:
     Fraction();
     Fraction(int32_t num, uint32_t denom);
     Fraction(double num);
-    int Len(double copy);
     void Reduction();
     void SetNum(int32_t num);
     void SetDenom(uint32_t denom);
@@ -32,10 +35,10 @@ public:
         return os;
     }
 
-     Fraction operator+(const Fraction& fraction) const {
+    Fraction operator+(Fraction& fraction) const {
         int32_t new_num = _num * fraction._denom + fraction._num * _denom;
-        uint32_t new_denum = fraction._denom * _denom;
-        return Fraction(new_num, new_denum);
+        uint32_t new_denom = fraction._denom * _denom;
+        return Fraction(new_num, new_denom);
     }
 
     Fraction operator+(double number) const {
@@ -139,6 +142,16 @@ public:
         Fraction copy = Fraction(_num, _denom);
         _num -= _denom;
         return copy;
+    }
+
+    Fraction operator-()const{
+        Fraction fract(-_num,_denom);
+        return fract;
+    }
+    Fraction sqrt(){
+        double tmp = static_cast<double>(_num) / _denom;
+        tmp = std::sqrt(tmp);
+        return Fraction(tmp);
     }
 
     operator double() const {

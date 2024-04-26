@@ -1,3 +1,3 @@
-D:/Code/Quadratic_Equations/build/CMakeFiles/main.dir
-D:/Code/Quadratic_Equations/build/CMakeFiles/edit_cache.dir
-D:/Code/Quadratic_Equations/build/CMakeFiles/rebuild_cache.dir
+/home/s23380420@unn.global/Projects/Quadratic_Equations/build/CMakeFiles/main.dir
+/home/s23380420@unn.global/Projects/Quadratic_Equations/build/CMakeFiles/edit_cache.dir
+/home/s23380420@unn.global/Projects/Quadratic_Equations/build/CMakeFiles/rebuild_cache.dir
