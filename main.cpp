@@ -11,10 +11,10 @@ int main(){
     // Square_Equation eq(a, b, c);
     // eq.print_roots();
 
+    a = a + b;
+    b = b + a + 1;
 
-
-
-    std::cout<<a+b<< std::endl;
+    std::cout<<a<< std::endl;
     std::cout<<b<< std::endl;
     return 0;
 }
