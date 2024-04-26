@@ -1,0 +1,26 @@
+[
+{
+  "directory": "D:/Code/Quadratic_Equations/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -g -o CMakeFiles\\main.dir\\main.cpp.obj -c D:\\Code\\Quadratic_Equations\\main.cpp",
+  "file": "D:\\Code\\Quadratic_Equations\\main.cpp",
+  "output": "CMakeFiles\\main.dir\\main.cpp.obj"
+},
+{
+  "directory": "D:/Code/Quadratic_Equations/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -g -o CMakeFiles\\main.dir\\Fraction.cpp.obj -c D:\\Code\\Quadratic_Equations\\Fraction.cpp",
+  "file": "D:\\Code\\Quadratic_Equations\\Fraction.cpp",
+  "output": "CMakeFiles\\main.dir\\Fraction.cpp.obj"
+},
+{
+  "directory": "D:/Code/Quadratic_Equations/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -g -o CMakeFiles\\main.dir\\Complex.cpp.obj -c D:\\Code\\Quadratic_Equations\\Complex.cpp",
+  "file": "D:\\Code\\Quadratic_Equations\\Complex.cpp",
+  "output": "CMakeFiles\\main.dir\\Complex.cpp.obj"
+},
+{
+  "directory": "D:/Code/Quadratic_Equations/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -g -o CMakeFiles\\main.dir\\Square.cpp.obj -c D:\\Code\\Quadratic_Equations\\Square.cpp",
+  "file": "D:\\Code\\Quadratic_Equations\\Square.cpp",
+  "output": "CMakeFiles\\main.dir\\Square.cpp.obj"
+}
+]
