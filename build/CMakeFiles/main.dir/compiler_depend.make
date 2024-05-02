@@ -874,9 +874,7 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/12/tr1/modified_bessel_func.tcc \
   /usr/include/c++/12/tr1/poly_hermite.tcc \
   /usr/include/c++/12/tr1/poly_laguerre.tcc \
-  /usr/include/c++/12/tr1/riemann_zeta.tcc \
-  ../Complex.h \
-  ../Square.h
+  /usr/include/c++/12/tr1/riemann_zeta.tcc
 
 
 ../main.cpp:

@@ -177,6 +177,4 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
  /usr/include/c++/12/tr1/poly_hermite.tcc \
  /usr/include/c++/12/tr1/poly_laguerre.tcc \
- /usr/include/c++/12/tr1/riemann_zeta.tcc \
- /home/s23380420@unn.global/Projects/Quadratic_Equations/Complex.h \
- /home/s23380420@unn.global/Projects/Quadratic_Equations/Square.h
+ /usr/include/c++/12/tr1/riemann_zeta.tcc

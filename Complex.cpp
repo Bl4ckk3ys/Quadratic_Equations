@@ -17,7 +17,7 @@ Complex::Complex(int num_re, int denom_re, int num_im, int denom_im){
 }
 
 Complex Complex::operator+(const Complex& number) const {
-    Fraction re = _re + number._re;
+    Fraction re = (_re + number._re);
     return Complex(re, _im);
 }
 

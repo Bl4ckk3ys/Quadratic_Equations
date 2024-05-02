@@ -13,12 +13,14 @@ private:
     
 public:
     Fraction();
+    Fraction(const Fraction& fraction);//Копируем
     Fraction(int32_t num, uint32_t denom);
     Fraction(double num);
     void Reduction();
     void SetNum(int32_t num);
     void SetDenom(uint32_t denom);
     void Print();
+
     inline int32_t GetNum(){
         return _num;
     }
@@ -35,11 +37,14 @@ public:
         return os;
     }
 
-    Fraction operator+(Fraction& fraction) const {
-        int32_t new_num = _num * fraction._denom + fraction._num * _denom;
-        uint32_t new_denom = fraction._denom * _denom;
-        return Fraction(new_num, new_denom);
+    Fraction operator+(const Fraction& fraction) const {
+        return Fraction(_num * fraction._denom + fraction._num * _denom, fraction._denom * _denom);
     }
+
+    // Fraction* operator+(const Fraction& fraction) const {
+    //     Fraction* res = new Fraction(_num * fraction._denom + fraction._num * _denom,  fraction._denom * _denom);
+    //     return res;
+    // }
 
     Fraction operator+(double number) const {
         int res = _num  + number * _denom;
@@ -75,6 +80,7 @@ public:
     }
 
     Fraction& operator=(const Fraction& fract){
+        const Fraction* pr = &fract;
         _num = fract._num;
         _denom = fract._denom;
         return *this;

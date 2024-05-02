@@ -77,7 +77,13 @@ Fraction::Fraction(double number){
     if (number > 0) _num = num / nod;
     else _num = (-1 * (int32_t)num) / nod;
     _denom = denum / nod;
-} 
+}
+ 
+Fraction::Fraction(const Fraction& fraction){
+    _num = fraction._num;
+    _denom = fraction._denom;
+    std::cout<<"Копирую"<<std::endl;
+}
 
 Fraction::Fraction(){
     _num = 0;
